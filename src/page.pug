@@ -1,0 +1,559 @@
+extends ./pug/layout
+
+block content
+	<!-- START HEADER -->
+	.header-mobile 
+		.container
+			.header-mobile__inner 
+				a.header-mobile__logo-wrapper
+					img.header-mobile__logo(src="images/logo.svg")
+				.header__nav.nav
+					a.nav-item.content-tab.s-nav__btn(href="#home") Главная
+					a.nav-item.content-tab.s-nav__btn(href="#lead") Знакомься с руководством
+					a.nav-item.content-tab.s-nav__btn(href="#growth") Твое развитие
+					a.nav-item.content-tab.s-nav__btn(href="#we") Мы первые
+					a.nav-item.content-tab.s-nav__btn(href="#history") История успеха
+				.nav-btn
+					.nav-btn__line
+					.nav-btn__line
+					.nav-btn__line
+	<!-- END HEADER -->
+
+	<!-- START CONTENT HOME -->
+	.content.content--active.content--opacity-1.content__home
+		<!-- START HEADER -->
+		.header 
+			.container 
+				a.header__logo-wrapper
+					img.header__logo(src="images/logo.svg")
+		<!-- END HEADER -->
+
+		<!-- START SECTION FIRST-SCREEN -->
+		.section.s-first-screen
+			.s-first-screen__content 
+				.s-first-screen__title.title.title--fs Стань частью команды Ucell
+			.container 
+				.s-first-screen__btn-wrapper
+					a.s-first-screen__btn.s-first-screen__btn--active.btn.anchor(href="#map") Присоединяйся
+		<!-- END SECTION FIRST-SCREEN -->
+
+		<!-- START SECTION ABOUT -->
+		.section.s-about.section--medium
+			.title.title--mb-long <span>Мы</span> помогаем людям быть ближе, <br>развивая технологии и предоставляя надёжную связь
+			.container
+				+video("n9I-toTIFWg", "images/video-bg1.jpg")
+				//- .swiper-container.about-slider 
+				//- 	.swiper-wrapper 
+				//- 		.swiper-slide 
+				//- 			+video("n9I-toTIFWg", "images/about/1.jpg")
+				//- 		.swiper-slide 
+				//- 			+video("H-cEx4MP1eU", "images/about/2.jpg")
+				//- 		.swiper-slide 
+				//- 			+video("H-cEx4MP1eU", "images/about/3.jpg")
+				//- .about-slider__pagination
+		<!-- END SECTION ABOUT -->
+
+		<!-- START SECTION VIDEO -->
+		.section.s-video.s-video--bg 
+			.container 
+				.title.title--mb-short Стань голосом <span>Ucell</span> 
+				.s-video__text 
+					p Работа Оператором call-центра подходит ребятам, с хорошими коммуникативными навыками, которые готовы помогать другим людям. Оператор – хорошо разбирается в новых технологиях и гаджетах, в компьютерных программах. Сотрудники контактного центра не работают с холодными звонками, не занимаются поиском клиентов, а отвечают за качественную и полную консультацию абонента. <br>Работа оператора call-центра является начальной ступенью на пути к профессиональному и карьерному росту сотрудников внутри компании. Из call-центра в компании много выходцев, кто сегодня работает в разных руководящих позициях. <br>
+					p.mt Не веришь? Посмотри их <a class="content-tab" href="#history">историю успеха</a>
+				//- +video("H-cEx4MP1eU", "images/video/1.jpg")
+				.s-video__img-wrapper 
+					img(src="images/video/1.jpg")
+		<!-- END SECTION VIDEO -->
+
+		<!-- START SECTION VIDEO -->
+		.section.s-video.section--medium 
+			.container 
+				.title.title--mb-short Ты можешь стать лицом <span>Ucell</span> 
+				.s-video__text 
+					p Продавец консультант – мы ждем тебя в Ucell. Если ты любишь помогать людям и развиваться в сфере продаж, ставить для себя цели и достигать их, тогда тебе к нам! Ты сможешь предлагать лучшие решения, подключать услуги для клиентов, исходя из их потребностей. Мы научим, продавать смартфоны, гаджеты и аксессуары и выступать экспертом в области цифровых технологий <br>Работа продавцом-консультантом – одна из первых ступеней на профессиональном пути руководителя <br>
+					p.mt Не веришь? Посмотри их <a class="content-tab" href="#history">историю успеха</a>
+				//- +video("H-cEx4MP1eU", "images/video/2.jpg")
+				.s-video__img-wrapper 
+					img(src="images/video/2.jpg")
+		<!-- END SECTION VIDEO -->
+
+		<!-- START SECTION SLOGAN -->
+		.section.s-slogan 
+			.container
+				.s-slogan__inner 
+					.s-slogan__content 
+						.s-slogan__title.title.title--white В нашей Компании <br>рост и движение человека по карьерной лестнице  <br>зависит от его желания и результатов работы.
+						a.s-slogan__btn.btn.content-tab(href="#growth") Твое развитие начинается с...
+					.s-slogan__img-wrapper 
+						img.s-slogan__img(src="images/kubik.png")
+		<!-- END SECTION SLOGAN -->
+	<!-- END CONTENT HOME -->
+
+	<!-- START CONTENT LEAD -->
+	.content.content__lead
+		<!-- START HEADER -->
+		.header 
+			.container
+				.header__inner 
+					a.header__logo-wrapper
+						img.header__logo(src="images/logo.svg")
+					a.header__link.content-tab(href="#home") ← Вернуться на главную
+		<!-- END HEADER -->
+
+		<!-- START SECTION FS -->
+		.section.s-fs 
+			.container
+				.s-fs__inner 
+					.s-fs__content 
+						.s-fs__title.title.title--white.title--mb-short Знакомься с <br>Руководством компании
+						.s-fs__text 
+							p Директора являются органом принятия решений относительно стратегии развития и управления компанией
+					.s-fs__img-wrapper 
+						img.s-fs__img(src="images/about.svg")
+					.container 
+						.s-first-screen__btn-wrapper
+							a.s-first-screen__btn.s-first-screen__btn--active.btn.anchor(href="#map") Присоединяйся
+		<!-- END SECTION FS -->
+
+		<!-- START SECTION LEADERS -->
+		.section.s-leaders.section--short-pt 
+			.container 
+				.s-leaders__inner 
+					+lead-card("images/leaders/1.jpg", "Андрей Шишковский", "Генеральный директор", "lead1")
+					+lead-card("images/leaders/3.jpg", "Георгий Чуравцов", "Коммерческий директор", "lead3")
+					+lead-card("images/leaders/2.jpg", "Елена Высевкова", "Директор  по управлению персоналом", "lead2")
+					+lead-card("images/leaders/4.jpg", "Александр Мохов", "Технический директор", "lead4")
+		<!-- END SECTION LEADERS -->
+	<!-- END CONTENT LEAD -->
+
+	<!-- START CONTENT GROWTH -->
+	.content.content__growth
+		<!-- START HEADER -->
+		.header 
+			.container
+				.header__inner 
+					a.header__logo-wrapper
+						img.header__logo(src="images/logo.svg")
+					a.header__link.content-tab(href="#home") ← Вернуться на главную
+		<!-- END HEADER -->
+
+		<!-- START SECTION FS -->
+		.section.s-fs 
+			.container
+				.s-fs__inner 
+					.s-fs__content 
+						.s-fs__title.title.title--white.title--mb-short Ucell Academy
+						.s-fs__text 
+							p Для работников, находящимся в поисках инструментов для совершенствования профессиональных навыков, существует программа Ucell Academy, где вам помогут наши профессиональные тренеры.
+					.s-fs__img-wrapper 
+						img.s-fs__img(src="images/kubik.png")
+					.container 
+						.s-first-screen__btn-wrapper
+							a.s-first-screen__btn.s-first-screen__btn--active.btn.anchor(href="#map") Присоединяйся
+		<!-- END SECTION FS -->
+
+		<!-- START SECTION FOR-YOU -->
+		.section.s-for-you.section--short-pt 
+			.s-for-you__title.title.title--left.title--mb-long Ucell Academy 
+			.container
+				.title.title--mb-long Для тебя будут открыты возможности, которые помогут тебе раскрыть твой потенциал на полную мощь&nbsp:
+				.s-for-you__text 
+					p Внешние тренинги с профессиональными бизнес-тренами 
+					p Корпоративные тренинги от Ucell Academy 
+					p Сессии по обмену опытом от коллег и менеджеров 
+					p Корпоративная и онлайн библиотека 
+					p Программа развития «Экспертный трек»
+					p Программа развития «Карьерный трек» 
+					p Коучинг\ менторство от коллег 
+					p Назначенные проекты 
+		<!-- START SECTION FOR-YOU -->
+
+		<!-- START SECTION GALLERY -->
+		.section.s-about.section--long
+			.swiper-container.gallery-slider#gallerySlider
+				.swiper-wrapper 
+					.swiper-slide
+						img.gallery-slider__img(src="images/gallery/1.jpg")
+					.swiper-slide
+						img.gallery-slider__img(src="images/gallery/2.jpg")
+					.swiper-slide
+						img.gallery-slider__img(src="images/gallery/3.jpg")
+					.swiper-slide
+						img.gallery-slider__img(src="images/gallery/4.jpg")
+					.swiper-slide
+						img.gallery-slider__img(src="images/gallery/5.jpg")
+					.swiper-slide
+						img.gallery-slider__img(src="images/gallery/6.jpg")
+					.swiper-slide
+						img.gallery-slider__img(src="images/gallery/7.jpg")
+					.swiper-slide
+						img.gallery-slider__img(src="images/gallery/8.jpg")
+					.swiper-slide
+						img.gallery-slider__img(src="images/gallery/9.jpg")
+					.swiper-slide
+						img.gallery-slider__img(src="images/gallery/10.jpg")
+					.swiper-slide
+						img.gallery-slider__img(src="images/gallery/11.jpg")
+			.gallery-slider__pagination
+		<!-- END SECTION GALLERY -->
+
+		<!-- START SECTION TIME -->
+		.section.s-time.section--short
+			.container 
+				.title.title--mb-short <span>Ucellful</span> time
+				.s-time__text 
+					p Компания заботится не только о эффективной работе своих сотрудниках в плане эффективной рабочей среды, но и о физическом и ментальном здоровье.  Сотрудникам предоставляется возможность держать себя в форме и начать или закончить свой рабочий день йогой, волейболом, футболом, настольным теннисом и фитнесом.
+				.s-time__inner
+					.s-time__icons
+						.s-time__icons-first 
+							+icon-card("sport", "Спорт")
+							+icon-card("joga", "Йога")
+						.s-time__icons-second
+							+icon-card("movie", "Movie Time")
+							+icon-card("fitness", "Фитнес")
+						.s-time__content 
+							p Для подержания корпоративного духа и отличного настроения, коллеги собираются вместе для совместного просмотра фильмов и обсуждения киноновинок.
+					.s-time__img-wrapper 
+						img.s-time__img(src="https://hhcdn.ru/ichameleon/261024.svg")
+						.swiper-container.time-slider 
+							.swiper-wrapper 
+								.swiper-slide 
+									img(src="images/time-slider/1.png")
+								.swiper-slide 
+									img(src="images/time-slider/2.png")
+								.swiper-slide 
+									img(src="images/time-slider/3.png")
+								.swiper-slide 
+									img(src="images/time-slider/4.png")
+		<!-- END SECTION TIME -->
+
+		//- <!-- START SECTION AGE -->
+		//- .section.s-age.section--long
+		//- 	.title.title--mb-long <span>Ucell</span> 26 лет
+		//- 	.swiper-container.age-slider 
+		//- 		.swiper-wrapper 
+		//- 			.swiper-slide
+		//- 				img.age-slider__img(src="images/age/1.jpg")
+		//- 			.swiper-slide
+		//- 				img.age-slider__img(src="images/age/2.jpg")
+		//- 			.swiper-slide
+		//- 				img.age-slider__img(src="images/age/3.jpg")
+		//- 			.swiper-slide
+		//- 				img.age-slider__img(src="images/age/4.jpg")
+		//- 			.swiper-slide
+		//- 				img.age-slider__img(src="images/age/5.jpg")
+		//- 			.swiper-slide
+		//- 				img.age-slider__img(src="images/age/6.jpg")
+		//- 	.age-slider__pagination
+		//- <!-- END SECTION AGE -->
+
+		<!-- START SECTION GUEST -->
+		.section.s-guest.section--short
+			.container 
+				.title.title--mb-short Наши гости
+				.s-guest__subtitle Здесь ты встретишь своего кумира!
+				.s-guest__text 
+					p Здесь встреча с кумиром — реальность!  Компания регулярно приглашает звездных гостей, инфлюенсеров и спортсменов, которых выбирают сотрудники.
+				.s-guest__inner 
+					+guest-card("guest1", "images/guest/1.jpg", "Интервью с Рустамом Сагдулаевым")
+					+guest-card("guest2", "images/guest/2.jpg", "Интервью с Оксаной Чусовитиной")
+					+guest-card("guest3", "images/guest/3.jpg", "Интервью с Максимом Гуськовым")
+		<!-- END SECTION GUEST -->
+
+		<!-- START SECTION TEAM -->
+		.s-team.section.section--long-pt
+			.container 
+				.title.title--mb-short <span>Ucell</span> Team
+				.s-team__text 
+					p Став частью команды, вы не только улучшаете качество жизни людей, но и обретаете отличных друзей!
+				.swiper-container.team-slider
+					.swiper-wrapper 
+						.swiper-slide
+							+video("DeSCAdjAQC8", "images/video/3.jpg")
+						.swiper-slide
+							img.age-slider__img(src="images/age/1.jpg")
+						.swiper-slide
+							img.age-slider__img(src="images/age/2.jpg")
+						.swiper-slide
+							img.age-slider__img(src="images/age/3.jpg")
+						.swiper-slide
+							img.age-slider__img(src="images/age/4.jpg")
+						.swiper-slide
+							img.age-slider__img(src="images/age/5.jpg")
+						.swiper-slide
+							img.age-slider__img(src="images/age/6.jpg")
+						.swiper-slide
+							img.age-slider__img(src="images/age/7.jpg")
+						.swiper-slide
+							img.age-slider__img(src="images/age/8.jpg")
+						.swiper-slide
+							img.age-slider__img(src="images/age/9.jpg")
+						.swiper-slide
+							img.age-slider__img(src="images/age/10.jpg")
+						.swiper-slide
+							img.age-slider__img(src="images/age/11.jpg")
+						.swiper-slide
+							img.age-slider__img(src="images/age/12.jpg")
+						.swiper-slide
+							img.age-slider__img(src="images/age/13.jpg")
+			.slider-arrows.team-slider-arrows
+				.slider-arrow.slider-arrow--prev.team-slider-arrow-prev
+					+icon("arrow-left", "slider-arrow__icon")
+				.slider-arrow.slider-arrow--next.team-slider-arrow-next
+					+icon("arrow-right", "slider-arrow__icon")
+		<!-- END SECTION TEAM -->
+	<!-- END CONTENT GROWTH -->
+
+	<!-- START CONTENT HISTORY -->
+	.content.content__history
+		<!-- START HEADER -->
+		.header 
+			.container
+				.header__inner 
+					a.header__logo-wrapper
+						img.header__logo(src="images/logo.svg")
+					a.header__link.content-tab(href="#home") ← Вернуться на главную
+		<!-- END HEADER -->
+
+		<!-- START SECTION FS -->
+		.section.s-fs 
+			.container
+				.s-fs__inner 
+					.s-fs__content 
+						.s-fs__title.title.title--white.title--mb-short История успеха
+						.s-fs__text 
+							p Карьерный рост важен для большинства специалистов, независимо от этапа профессиональной деятельности.
+							br 
+							p В нашей Компании рост — это не сказки,<br>а достижимая цель.
+					.s-fs__img-wrapper 
+						img.s-fs__img(src="images/man.png")
+					.container 
+						.s-first-screen__btn-wrapper
+							a.s-first-screen__btn.s-first-screen__btn--active.btn.anchor(href="#map") Присоединяйся
+		<!-- END SECTION FS -->
+
+		<!-- START SECTION INTERVIEW -->
+		.section.s-interview.section--short-pt 
+			.container 
+				.s-interview__inner 
+					+video("QGxroqCJm9E", "images/interview/1.jpg")
+					+video("ok0bxs8387U", "images/interview/2.jpg")
+					+video("I2kCvINKNng", "images/interview/3.jpg")
+					//- +video("H-cEx4MP1eU", "images/interview/4.jpg")
+		<!-- END SECTION INTERVIEW -->
+	<!-- END CONTENT HISTORY -->
+
+	<!-- START CONTENT WE -->
+	.content.content__we
+		<!-- START HEADER -->
+		.header 
+			.container
+				.header__inner 
+					a.header__logo-wrapper
+						img.header__logo(src="images/logo.svg")
+					a.header__link.content-tab(href="#home") ← Вернуться на главную
+		<!-- END HEADER -->
+
+		<!-- START SECTION FS -->
+		.section.s-fs 
+			.container
+				.s-fs__inner 
+					.s-fs__content 
+						.s-fs__title.title.title--white.title--mb-short О нас
+						.s-fs__text 
+							p Команда Ucell делает ставку на внутреннюю корпоративную культуру, развитие и обучение людей, карьерный рост и социальную защиту. Созданные условия труда в компании способствуют личному развитию и росту каждого сотрудника. 
+					.s-fs__img-wrapper 
+						img.s-fs__img(src="images/about-2.svg")
+					.container 
+						.s-first-screen__btn-wrapper
+							a.s-first-screen__btn.s-first-screen__btn--active.btn.anchor(href="#map") Присоединяйся
+		<!-- END SECTION FS -->
+
+		<!-- START SECTION HISTORY -->
+		.section.s-history.section--long-pt 
+			.container
+				.history
+					.history__content
+						p.history__title.subtitle Наша история
+						.history__slider
+							.swiper-container.swiper-container-history
+								.swiper-wrapper
+									.swiper-slide
+										.history__year 1996 год, апрель
+										p.history__subtitle.semisubtitle Основание компании
+										p.text
+											| Описание раздела : "COSCOM" было основано в апреле 1996 года как совместное предприятие MCT Telecom Corp. (99.2%) и местного партнера(0.8%). Основным направлением деятельности предприятия является развитие современной системы сотовой связи в стандарте GSM 900⁄1800. Первая сеть была запущена в городе Самарканд, позже сеть охватила всю страну. 
+									.swiper-slide
+										.history__year 2019 год
+										p.history__subtitle.semisubtitle Ucell – первый в метро!
+										p.text
+											| Исторический запуск интернета в метрополитене начался в 2019 году. В сентябре на 6-й выставке ICTEXPO 2019 OOO COSCOM (торговая марка Ucell) впервые объявила о запуске связи на двух станциях. Уже сегодня интернет доступен для абонентов на всех платформах.
+									.swiper-slide
+										.history__year 2019 год, сентябрь 
+										p.history__subtitle.semisubtitle Первая 4G на высоте 2850 метров
+										p.text
+											| 2019 году там была установлена первая станция 4G на высоте 2850 метров, прямо над сельским сходом граждан «Богча» в Сариасийском районе Сурхандарьинской области.
+									.swiper-slide
+										.history__year 2019 год, октябрь
+										p.history__subtitle.semisubtitle Впервые запустили 5G
+										p.text
+											| в 2021 году  Компания Ucell впервые в Узбекистане запустила связь 5G тем самым предоставив жителям Узбекистана возможность погрузиться в опыт сетей пятого поколения. В Самарканде завершено внедрение 5G на оборудовании ZTE: теперь 5G работает в международном аэропорту, туристическом центре «Silk Road Samarkand» и в центральных районах города.
+									.swiper-slide
+										.history__year 2022
+										p.history__subtitle.semisubtitle Покрытия сети
+										p.text
+											| Команда специалистов Ucell постоянно работает над улучшением качества связи и повышением удобства обслуживания.В 2022 году продолжается глобальная техническая реконструкция сети: будут построены несколько сотен новых площадок. Кроме того, будет модернизировано 30% всех базовых станций Ucell по всей стране. <br><br>По состоянию на август: <br>— Сеть 2G Ucell покрывает 97,8% населённых пунктов. <br>— Сеть 3G компании охватывает 76,8% населённых пунктов страны. <br>— Сеть 4G покрывает 85,2% населённых пунктов.
+							.pagination
+								.arrow.arrow--prev
+								.swiper-pagination.swiper-pagination-history
+								.arrow.arrow--next
+					.history__tower
+						img(src='images/tele.svg')
+						.history__elems.history__elems--active_slide1
+							.history__elem.active
+								.history__caption
+									span Основание компании
+							.history__elem
+								.history__caption
+									span Ucell – первый в метро!
+							.history__elem
+								.history__caption
+									span Первая 4G на высоте 2850 метров
+							.history__elem
+								.history__caption
+									span Впервые запустили 5G
+							.history__elem
+								.history__caption
+									span Покрытия сети
+		<!-- END SECTION HISTORY -->
+	<!-- END CONTENT WE -->
+
+	<!-- START SECTION MAP -->
+	.section.s-map.section--long#map
+		.container
+			include ./map
+	<!-- END SECTION MAP -->
+
+	<!-- START MODAL -->
+	+modal("one")
+		.modal__inner 
+			.modal__img-wrapper
+				img.modal__img(src="images/leaders/1.jpg")
+			.modal__content 
+				.modal__title Андрей Шишковский
+				.modal__text 
+					p Окончил Уральский государственный экономический университет по специальности «Экономист» и Уральскую государственную юридическую академию по специальности «Юриспруденция».
+					p В 2003—2006 годах Андрей Шишковский работал аудитором в компании «Стандарт-Аудит», с 2006 по 2008 годы — внутренним аудитором в Уральском филиале компании «МегаФон».
+					p В 2008 году Шишковский был назначен на должность финансового директора «МегаФон-Таджикистан», а в 2012 году становится исполнительным директором. После двух с половиной лет успешного руководства дочерней компанией «МегаФона» в феврале 2015 года возвращается в Уральский филиал на должность финансового директора.
+					p В октябре 2015 года Шишковский был назначен на должность директора Сибирского филиала «МегаФон». С 2019 года работал директором по региональному развитию «МегаФон».
+					p 30 сентября 2021 года Андрей Шишковский назначен Генеральным директором оператора Ucell.
+		+video("DFeOAnDd-4A", "images/video-bg1.png")
+	+modal("two")
+		.modal__inner 
+			.modal__img-wrapper
+				img.modal__img(src="images/leaders/2.jpg")
+			.modal__content
+				.modal__title Елена Высевкова
+				.modal__status Директор  по управлению персоналом 
+				.modal__text 
+					p Елена Высевкова – кандидат педагогических наук, имеет 25 летний управленческий опыт, является профессиональным тренером (тренерские школы Елены Сидоренко, Марка Кукушкина, Карен Рихтер, Ицхака Адизеса), бизнес-коуч, сертифицированный модератор GTZ. 
+					p С 2005г. работает на управленческих позициях в сфере HR в разных отраслях экономики: банковском секторе, энергетике, телекоме. 
+					p С октября 2021 года работает в Ucell на должности Директора по Управлению Персоналом.
+		+video("EWy1ArVbYD0", "images/video-bg1.png")
+	+modal("three")
+		.modal__inner 
+			.modal__img-wrapper
+				img.modal__img(src="images/leaders/3.jpg")
+			.modal__content 
+				.modal__title Георгий Чуравцов
+				.modal__text 
+					p Образование и карьера
+					p Окончил Калининградский государственный технический университет по специальности «Вычислительная техника».
+					p В 2003 Георгий Чуравцов начинал свою карьеру в ООО “Филип Моррис Сэйлз энд Маркетинг” где получил первый опыт работы в продажах и первый руководящий опыт.
+					p С конца 2009 года перешел в сферу телекоммуникаций в компанию “ВымпелКом”, работал на различных позициях в разных регионах России, пройдя путь от начальника отдела продаж до директора региона и генерального директора одного из дочерних предприятий.
+					p В январе 2017 года Георгий Чуравцов перешел в ПАО “МТС” на должность директора по продажам Санкт-Петербурга и Ленинградской области
+					p С октября 2021 года работает в Ucell на должности коммерческий директор.
+		+video("uRz6zK67wE0", "images/video-bg1.png")
+	+modal("four")
+		.modal__inner 
+			.modal__img-wrapper
+				img.modal__img(src="images/leaders/4.jpg")
+			.modal__content 
+				.modal__title Александр Мохов
+				.modal__text 
+					p Окончил Санкт-Петербургскую академию аэрокосмического приборостроения по специальности «радиоинженер, Системы управления беспилотными летательными аппаратами».
+					p Работал инженером дежурной смены, далее начальником в центр эксплуатации обслуживания сети в компании Северо-Западный GSM с 1994 по 2000 год.
+					p В 2000 году перешёл в компанию Телекоминвест на должность заместителя директора дивизиона регионального развития.
+					p В 2001 году переведён в дочернюю компанию Соник Дуо на должность заместителя технического директора по эксплуатации.
+					p В 2002 году устроился на должность начальника департамента технического развития и контроля в компанию МегаФон.
+					p С 2008 года работал в должности технического директора в Северо-Западном филиале МегаФона 
+					p С 2019 года по 2021 работал директором по развитию в компании РОССИННО
+					p С октября 2021 года работает в Ucell на должности технического директора 
+		+video("zh4YyifdbUM", "images/video-bg1.png")
+	+modal("five")
+		.modal__inner 
+			.modal__img-wrapper
+				img.modal__img(src="images/guest/1.jpg")
+			.modal__content 
+				.modal__text 
+					p <span class="bold">Рустам Сагдуллаев</span> - узбекский актёр и режиссёр, широко известный ролью Ромео в фильме "В бой идут одни старики", был приглашенным гостем на празднование 26 лет компании, где рассказал свою историю успеха. У сотрудников была возможность лично познакомится с актёром и задать интересующие вопросы.
+				.swiper-container.rustam-slider 
+					.swiper-wrapper 
+						.swiper-slide 
+							img(src="images/person-slider/rustam/1.jpg")
+						.swiper-slide 
+							img(src="images/person-slider/rustam/2.jpg")
+						.swiper-slide 
+							img(src="images/person-slider/rustam/3.jpg")
+						.swiper-slide 
+							img(src="images/person-slider/rustam/4.jpg")
+						.swiper-slide 
+							img(src="images/person-slider/rustam/5.jpg")
+						.swiper-slide 
+							img(src="images/person-slider/rustam/6.jpg")
+					.slider-arrows.rustam-slider-arrows
+						.slider-arrow.slider-arrow--prev.rustam-slider-arrow-prev
+							+icon("arrow-left", "slider-arrow__icon")
+						.slider-arrow.slider-arrow--next.rustam-slider-arrow-next
+							+icon("arrow-right", "slider-arrow__icon")
+	+modal("six")
+		.modal__inner 
+			.modal__img-wrapper
+				img.modal__img(src="images/guest/2.jpg")
+			.modal__content 
+				.modal__text 
+					p <span class="bold">Оксана Чусовитина</span> -  гимнастка, на протяжении карьеры выступавшая за СССР, Узбекистан и Германию, двукратная олимпийская чемпионка, трёхкратная чемпионка мира, чемпионка Европы, чемпионка Азиатских игр. Занесена в Книгу рекордов Гинесса как единственная в истории гимнастики участница восьми Олимпийских игр. Оксана была приглашена гостем на празднование 26 лет компании. На встрече у сотрудников была возможность познакомится с легендой отечественного спорта и узнать историю успеха из первых уст.
+				.swiper-container.oks-slider 
+					.swiper-wrapper 
+						.swiper-slide 
+							img(src="images/person-slider/oks/1.jpg")
+						.swiper-slide 
+							img(src="images/person-slider/oks/2.jpg")
+						.swiper-slide 
+							img(src="images/person-slider/oks/3.jpg")
+					.slider-arrows.oks-slider-arrows
+						.slider-arrow.slider-arrow--prev.oks-slider-arrow-prev
+							+icon("arrow-left", "slider-arrow__icon")
+						.slider-arrow.slider-arrow--next.oks-slider-arrow-next
+							+icon("arrow-right", "slider-arrow__icon")
+	+modal("seven")
+		.modal__inner 
+			.modal__img-wrapper
+				img.modal__img(src="images/guest/3.jpg")
+			.modal__content 
+				.modal__text 
+					p <span class="bold">Максим Гуськов</span> – тренер по личностному росту, эксперт в работе с установками. Был приглашен в качестве тренера в проект «Кадровый актив», где дает возможность сотрудникам влиять на результаты, расти по карьерной лестнице, реализовывать свои идеи в компании.
+				.swiper-container.max-slider 
+					.swiper-wrapper 
+						.swiper-slide 
+							img(src="images/person-slider/max/1.jpg")
+						.swiper-slide 
+							img(src="images/person-slider/max/1.jpg")
+						.swiper-slide 
+							img(src="images/person-slider/max/1.jpg")
+					.slider-arrows.max-slider-arrows
+						.slider-arrow.slider-arrow--prev.max-slider-arrow-prev
+							+icon("arrow-left", "slider-arrow__icon")
+						.slider-arrow.slider-arrow--next.max-slider-arrow-next
+							+icon("arrow-right", "slider-arrow__icon") 
+	<!-- START MODAL -->

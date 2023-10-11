@@ -1,0 +1,572 @@
+@import "./../assets/vars";
+@import "./../assets/keyframes";
+@import "./../modules/nav";
+
+// BREAKPOINT LAPTOP
+@media (max-width: $ss_laptop) {
+	.container{
+		max-width: 880px;
+	}
+	.wrapper{
+		font-size: 16px;
+	}
+	.s-map{
+		padding-bottom: 3%;
+	}
+	.map{
+		display: none;
+	}
+	.nav{
+		&-item{
+			padding: 13px 10px 13px 5px;
+		}
+	}
+	.s-first-screen{
+		min-height: 469px;
+    background-size: cover;
+		@keyframes pulse_animation2 {
+			0% { transform: scale(1) translateX(-100%); }
+			30% { transform: scale(1) translateX(-100%); }
+			40% { transform: scale(1.08) translateX(-100%); }
+			50% { transform: scale(1) translateX(-100%); }
+			60% { transform: scale(1) translateX(-100%); }
+			70% { transform: scale(1.05) translateX(-100%); }
+			80% { transform: scale(1) translateX(-100%); }
+			100% { transform: scale(1) translateX(-100%); }
+		}
+		&__btn--active{
+			animation: pulse_animation2 3s infinite linear;
+		}
+	}
+	.s-slogan{
+		&__inner{
+			align-items: center;
+			padding: 20px;
+		}
+		&__content{
+			padding: 0;
+			width: 45%;
+		}
+		&__title{
+			br{
+				display: none;
+			}
+		}
+		&__img-wrapper{
+			position: static;
+		}
+	}
+	// .s-team{
+	// 	.slider-arrow{
+	// 		&--prev{
+	// 			top: 60%;
+	// 		}
+	// 		&--next{
+	// 			top: 60%;
+	// 		}
+	// 	}
+	// }
+	.s-time{
+		&__content{
+			margin-top: 24px;
+		}
+	}
+	.history__elems{
+		left: 31.7%;
+	}
+	.content{
+		&__lead{
+			.s-fs{
+				&__img-wrapper{
+					right: 5%;
+				}
+			}
+		}
+		&__growth{
+			.s-fs{
+				&__img-wrapper{
+					right: 32%;
+				}
+			}
+		}
+		&__we{
+			.s-fs{
+				&__img-wrapper{
+					right: 31%;
+				}
+			}
+		}
+	}
+	.s-nav{
+		&__btn{
+			&+&{
+				padding-left: 20px;
+				margin-left: 20px;
+			}
+		}
+	}
+	.gallery-slider {
+		.swiper-slide {
+			&-active,
+			&-duplicate-active {
+				.gallery-slider__img {
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}
+
+// BREAKPOINT TABLET
+@media (max-width: $ss_tablet) {
+	.wrapper{
+		font-size: 15px;
+	}
+	.container{
+		padding: 0 15px;
+	}
+	.vacancies-map{
+		&, &-city{
+			display: none;
+		}
+		&__close{
+			top: -8%;
+			right: -5%;
+			z-index: 10;
+			// display: none;
+		}
+		&-select{
+			width: 100%;
+			// background: none;
+			// color: $color_text;
+			top: 10px;
+			&__option{
+				text-align: center;
+				padding: 20px 10px;
+			}
+			&__slider-container{
+				height: 500px;
+				.swiper-wrapper{
+					.swiper-slide{
+						width: 100%;
+					}
+				}
+			}
+			&--active{
+				padding: 0;
+				max-height: 500px;
+				.vacancies-map__close{
+					width: 15%;
+				}
+			}
+			&, &__label{
+				display: block;
+			}
+			&__label{
+				font-size: 26px;
+			}
+		}
+	}
+	.header-mobile{
+		padding: 24px 0;
+		display: block;
+		&__inner{
+			display: flex;
+			justify-content: space-between;
+			align-content: center;
+		}
+	}
+	.header{
+		display: none;
+	}
+	.s-nav{
+		display: none;
+	}
+	@include nav-module($color_secondary, #fff);
+	.nav {
+		display: flex;
+		flex-direction: column;
+		z-index: 3;
+		&-item {
+			color: #fff;
+			background: none;
+			& + & {
+				margin-left: 0;
+			}
+			&::after{
+				display: none;
+			}
+			&:hover, &:focus{
+				background: none;
+				color: #fff;
+			}
+		}
+	}
+	.video{
+		&__play-btn{
+			font-size: 3em;
+		}
+	}
+	.s-first-screen{
+		background-position: center;
+		min-height: 415px;
+		&__title{
+			padding: 19px 40px 19px 20px;
+			max-width: 330px;
+		}
+		&__btn-wrapper{
+			right: 20px;
+		}
+		&__btn{
+			&--active{
+				transform: translateX(-100%);
+			}
+		}
+	}
+	.title{
+		font-size: 28px;
+		&--fs{
+			font-size: 36px;
+			line-height: 44px;
+		}
+	}
+	.about-slider, .gallery-slider, .age-slider{
+		&__pagination{
+			margin-top: 30px;
+		}
+	}
+	.s-slogan{
+		&__inner{
+			justify-content: center;
+    	text-align: center;
+			padding: 40px 20px;
+		}
+		&__content{
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		&__img-wrapper{
+			width: 100%;
+		}
+		&__title{
+			text-align: center;
+		}
+		&__btn{
+			width: 85%;
+			text-align: center;
+		}
+	}
+	.s-fs{
+		min-height: 350px;
+		&__inner{
+			padding: 40px 0 0px;
+		}
+		&__title{
+			font-size: 42px;
+			line-height: 48px;
+		}
+		&__img-wrapper{
+			position: static;
+			width: 52%;
+			margin: 0 auto;
+			transform: translateX(0);
+		}
+		&__title{
+			text-align: center;
+		}
+		&__text{
+			text-align: center;
+			margin: 0 auto 20px;
+		}
+	}
+	.modal{
+		&__window{
+			width: 80%;
+		}
+		&__img-wrapper{
+			width: 28%;
+		}
+		&__content{
+			width: 68%;
+		}
+	}
+	.s-team{
+		&__text{
+			margin-bottom: 30px;
+		}
+		.slider-arrow{
+			font-size: 1em;
+			box-shadow: none;
+		}
+	}
+	.s-time{
+		&__icons{
+			&-second{
+				margin-left: 30px;
+			}
+		}
+	}
+	.time-slider{
+		left: -8%;
+		.swiper-slide{
+			img{
+				width: 55%;
+			}
+		}
+	}
+	.history{
+		margin-top: 0;
+		text-align: center;
+		justify-content: center;
+		&__content{
+			margin-top: 0;
+			width: 100%;
+			p.history__title{
+				text-align: center;
+			}
+		}
+		&__tower{
+			display: none;
+		}
+	}
+	.s-video{
+		&--bg{
+			padding: 40px 0;
+		}
+	}
+}
+
+// BREAKPOINT SM TABLET
+@media (max-width: $ss_sm_tablet) {
+	.wrapper{
+		font-size: 14px;
+	}
+	.video{
+		&__play-btn{
+			font-size: 2em;
+		}
+	}
+	.about-slider{
+		margin: 0 -50%;
+	}
+	.s-leaders{
+		&__inner{
+			margin-bottom: -25px;
+		}
+	}
+	.lead-card{
+		margin-bottom: 25px;
+	}
+	.modal{
+		&__window{
+			padding: 42px 16px;
+		}
+		&__inner{
+			flex-wrap: wrap;
+		}
+		&__img-wrapper{
+			width: 70%;
+			text-align: center;
+			margin: 0 auto;
+		}
+		&__title{
+			font-size: 28px;
+			margin-bottom: 15px;
+			margin-top: 12px;
+		}
+		&__status{
+			margin-bottom: 28px;
+		}
+		&__text{
+			margin-bottom: 28px;
+			p+p{
+				margin-top: 12px;
+			}
+		}
+		&__content{
+			width: 100%;
+			text-align: center;
+		}
+	}
+	.s-time{
+		&__inner{
+			margin-top: 40px;
+		}
+		&__icons{
+			width: 100%;
+			text-align: center;
+			justify-content: center;
+		}
+		&__img-wrapper{
+			width: 100%;
+			margin-top: 25px;
+			text-align: center;
+		}
+		&__img{
+			width: 65%;
+		}
+	}
+	.time-slider{
+		left: 0;
+		.swiper-slide{
+			text-align: center;
+			img{
+				width: 50%;
+				text-align: center;
+				margin: 0 auto;
+				display: inline-block;
+			}
+		}
+	}
+	.s-interview{
+		.video{
+			width: 100%;
+		}
+	}
+	.history{
+		&__content{
+			p.history__title{
+				margin-bottom: 38px;
+				font-size: 38px;
+				line-height: 42px;
+			}
+		}
+	}
+	.pagination{
+    margin-top: 34px;
+	}
+}	
+
+// BREAKPOINT PHONE
+@media (max-width: $ss_phone) {
+	.wrapper{
+		width: calc(100% + 30px);
+		margin: 0 -15px;
+	}
+	.vacancies-map{
+		&__close{
+			top: -20px;
+		}
+	}
+	.title{
+		font-size: 24px;
+		&--fs{
+			font-size: 32px;
+			line-height: 38px;
+		}
+		&--mb{
+			&-short{
+				margin-bottom: 16px;
+			}
+			&-long{
+				margin-bottom: 44px;
+			}
+		}
+	}
+	.s-first-screen{
+		min-height: 300px;
+		&__title{
+			padding: 17px 20px 17px 15px;
+			max-width: 300px;
+		}
+		&__btn-wrapper{
+			right: 5px;
+		}
+		.btn{
+			padding: 10px 15px;
+		}
+	}
+	.about-slider, .gallery-slider, .age-slider{
+		&__pagination{
+			margin-top: 24px;
+			.swiper-pagination-bullet{
+				width: 7px;
+				height: 7px;
+			}
+		}
+	}
+	.s-video{
+		&__text{
+			padding-bottom: 34px;
+		}
+	}
+	.s-slogan{
+		&__inner{
+			padding: 32px 10px;
+		}
+	}
+	.s-fs{
+		&__inner{
+			padding: 30px 0 0px;
+		}
+		&__title{
+			font-size: 32px;
+		}
+	}
+	.modal{
+		&__window{
+			width: 85%;
+		}
+	}
+	.lead-card{
+		width: 100%;
+		&__name{
+			margin: 14px 0 10px;
+		}
+	}
+	.s-for-you{
+		&__text{
+			p{
+				width: 100%;
+			}
+		}
+	}
+	.s-guest{
+		&__inner{
+			margin-bottom: -32px;
+			margin-top: 30px;
+		}
+		&__subtitle{
+			font-size: 20px;
+		}
+	}
+	.guest-card{
+		width: 100%;
+		margin-bottom: 32px;
+		&__name{
+			margin-top: 14px;
+		}
+	}
+	.s-team{
+		.slider-arrow{
+			&--prev{
+				top: 67%;
+			}
+			&--next{
+				top: 67%;
+			}
+		}
+	}
+	.history{
+		&__content{
+			p.history__title{
+				margin-bottom: 30px;
+				font-size: 28px;
+				line-height: 32px;
+			}
+		}
+	}
+	p.history__subtitle{
+		margin-bottom: 18px;
+    font-size: 22px;
+    line-height: 28px;
+	}
+	.pagination{
+		margin-top: 24px;
+	}
+	.s-video{
+		&--bg{
+			padding: 24px 0;
+		}
+	}
+}

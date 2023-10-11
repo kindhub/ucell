@@ -1,0 +1,43 @@
+mixin icon(id, className)
+	svg(xmlns:xlink="http://www.w3.org/1999/xlink" class=className)
+		use(xlink:href="#tmpl-hh__icon-" + id href="#tmpl-hh__icon-" + id)
+
+mixin video(video, thumbnail, source="youtube")
+	.video(data-video-id=video data-video-source=source)
+		img.video__preview(src=thumbnail)
+		.video__play-btn
+			+icon('play-btn')
+
+mixin modal(id, withCloseBtn=true)
+	.modal(id=id)
+		.modal__window
+			if withCloseBtn
+				button.modal__close-btn(type="button")
+			block
+
+mixin nav-btn
+	.nav-btn
+		.nav-btn__line
+		.nav-btn__line
+		.nav-btn__line
+
+mixin lead-card(imgSrc, name, status, id) 
+	.lead-card
+		.lead-card__img-wrapper
+			img.lead-card__img(src=imgSrc)
+		.lead-card__name!=name
+		.lead-card__status!=status
+		.lead-card__btn.btn(id=id) Подробнее
+
+mixin guest-card(id, imgSrc, name) 
+	.guest-card
+		.guest-card__img-wrapper
+			img.guest-card__img(src=imgSrc)
+		.guest-card__name!=name
+		.guest-card__btn.btn(id=id) Подробнее
+
+mixin icon-card(icon, title)
+	.icon-card
+		.icon-card__icon-container 
+			+icon(icon, "icon-card__icon")
+		.icon-card__title!=title
